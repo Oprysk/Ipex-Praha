@@ -1,0 +1,144 @@
+/* The Modal (background) */
+/* line 2, ../sass/modalAsk.scss */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* The Close Button */
+/* line 19, ../sass/modalAsk.scss */
+.modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 26, ../sass/modalAsk.scss */
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+/* line 33, ../sass/modalAsk.scss */
+.modal-header {
+  font-size: 22px;
+  padding: 2px 25px;
+  color: #535c60;
+}
+
+/* Modal Body */
+/* line 40, ../sass/modalAsk.scss */
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Modal Footer */
+/* line 43, ../sass/modalAsk.scss */
+.modal-footer {
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Modal Content */
+/* line 49, ../sass/modalAsk.scss */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 260px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* line 63, ../sass/modalAsk.scss */
+.modal-header h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+/* line 69, ../sass/modalAsk.scss */
+.modal-ask-form {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+/* line 73, ../sass/modalAsk.scss */
+.modal-ask-form input[type="text"] {
+  height: 30px;
+  font-size: 16px;
+}
+/* line 77, ../sass/modalAsk.scss */
+.modal-ask-form input {
+  width: 100%;
+  margin: 10px 0px;
+  height: 30px;
+  font-size: 16px;
+}
+/* line 83, ../sass/modalAsk.scss */
+.modal-ask-form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  resize: none;
+  height: 90px;
+  font-size: 14px;
+}
+/* line 92, ../sass/modalAsk.scss */
+.modal-ask-form button {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+  background: #ea6060;
+  border: none;
+  border-radius: 3px;
+  padding: 8px 20px;
+  margin: 10px 0;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

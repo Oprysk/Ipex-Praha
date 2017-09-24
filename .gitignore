@@ -1,0 +1,7 @@
+# Ignore everything
+.sass-cache
+.idea
+
+# But not these files...
+
+# etc...

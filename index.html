@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/screen.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+    <script src="./js/mobileMenuTransformer.js"></script>
+    <script src="./js/navMenu.js"></script>
+    <script src="./js/modalQuestion.js"></script>
+</head>
+
+<body>
+<div id="loading"></div>
+<header>
+    <nav class="header-navigation-container navigation">
+        <span class="header-burger-menu"><i class="icon-burger"></i></span>
+        <ul class="header-navigation">
+            <li class="menu-item" data-item="Home"><a href="#">Home</a></li>
+            <li class="menu-item" data-item="Store"><a href="#">Store</a></li>
+            <li class="menu-item active" data-item="Blog"><a href="#">Blog</a></li>
+            <li class="menu-item" data-item="About"><a href="#">About</a></li>
+            <li class="menu-item" data-item="Contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-right-menu">
+        <div class="header-search header-right-menu-section">
+            <i class="icon-search"></i>
+        </div>
+
+        <div class="header-social">
+            <div class="header-right-menu-icon">
+                <span class="header-right-menu-section"><i class="icon-facebook"></i></span>
+                <span class="header-right-menu-section"><i class="icon-twitter"></i></span>
+                <span class="header-right-menu-section"><i class="icon-google"></i></span>
+            </div>
+
+        </div>
+
+        <div class="header-user-menu header-right-menu-section">
+            <i class="icon-login" id="openAskModal"></i>
+        </div>
+    </div>
+
+</header>
+<div class="wrapper">
+    <div class="content grid">
+        <div class="main">
+            <div class="col-6 menu-sidebar">
+                <nav class="sidebar-navigation navigation">
+                    <ul class="sidebar-nav_list">
+                        <li class="menu-item" data-item="Home"><a href="#"><i class="icon-home"></i><span>Home</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item" data-item="Store"><a href="#"><i class="icon-shop"></i><span>Store</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item active" data-item="Blog"><a href="#"><i class="icon-home"></i><span>Blog</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item" data-item="Community"><a href="#"><i class="icon-login"></i><span>Community</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item" data-item="Contests"><a href="#"><i class="icon-trophy"></i><span>Contests</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item" data-item="About"><a href="#"><i class="icon-info"></i><span>About</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item" data-item="Contact"><a href="#"><i class="icon-email"></i><span>Contact</span></a>
+                            <div class="mobile-menu"></div>
+                        </li>
+                        <li class="menu-item contact">
+                            <i class="icon-phone"></i>
+                            <span>(912) 555-1234</span>
+                            <span>(912) 555-5678</span>
+                        </li>
+                        <li class="menu-item contact">
+                            <i class="icon-pointer"></i>
+                            <span>1600 Pennsylvania Ave NW, Washington DC 20500, USA</span>
+                        </li>
+                        <li class="menu-item contact">
+                            <i class="icon-email"></i>
+                            <a href="mailto:hello@website.com" class="email">hello@website.com</a>
+                            <a href="mailto:office@website.com" class="email">office@website.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu active" data-active-submenu="Blog">
+                        <li class="menu-item active">
+                            <a href="#">Tech</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Software & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Entertainment</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Film</a></li>
+                                <li class="menu-item"><a href="#">Gaming</a></li>
+                                <li class="menu-item"><a href="#">Music</a></li>
+                                <li class="menu-item"><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Business</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Jobs</a></li>
+                                <li class="menu-item"><a href="#">Marketing</a></li>
+                                <li class="menu-item"><a href="#">Media</a></li>
+                                <li class="menu-item"><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Lifestyle</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li class="menu-item"><a href="#">Health & Fitmess</a></li>
+                                <li class="menu-item"><a href="#">Travel & Leisure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu" data-active-submenu="Home">
+                        <li class="menu-item active">
+                            <a href="#">Tech</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Software & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Lifestyle</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Home</a></li>
+                                <li class="menu-item"><a href="#">Health & Fitmess</a></li>
+                                <li class="menu-item"><a href="#">Travel & Leisure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="sub-menu" data-active-submenu="Store">
+                        <li class="menu-item active">
+                            <a href="#">Store</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Software & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                                <li class="menu-item"><a href="#">Software & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                                <li class="menu-item"><a href="#">Software & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="sub-menu" data-active-submenu="Community">
+                        <li class="menu-item active">
+                            <a href="#">Community</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Software & Community</a></li>
+                                <li class="menu-item"><a href="#">Community</a></li>
+                                <li class="menu-item"><a href="#">Mobile</a></li>
+                                <li class="menu-item"><a href="#">Community & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Community</a></li>
+                                <li class="menu-item"><a href="#">Community & Apps</a></li>
+                                <li class="menu-item"><a href="#">Gadgets</a></li>
+                                <li class="menu-item"><a href="#">Community</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="sub-menu" data-active-submenu="Contests">
+                        <li class="menu-item active">
+                            <a href="#">Contests</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Software & Community</a></li>
+                                <li class="menu-item"><a href="#">Community</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="sub-menu" data-active-submenu="About">
+                        <li class="menu-item active">
+                            <a href="#">About</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">About1</a></li>
+                                <li class="menu-item"><a href="#">About2</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <ul class="sub-menu" data-active-submenu="Contact">
+                        <li class="menu-item active">
+                            <a href="#">Contact</a>
+                            <ul class="sub-menu--second">
+                                <li class="menu-item"><a href="#">Contact1</a></li>
+                                <li class="menu-item"><a href="#">Contact2</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-6 main-wrapper">
+                <div class="grid">
+                    <div class="col-6">
+                        <div class="main-social-list">
+                            <ul>
+                                <li class="main-social-icons">
+                                    <a href="#" class="icon-circle"><i class="icon-facebook"></i><span class="main-social-text">Facebook</span></a>
+                                </li>
+                                <li class="main-social-icons">
+                                    <a href="#" class="icon-circle"><i class="icon-twitter"></i><span class="main-social-text">Twitter</span></a>
+                                </li>
+                                <li class="main-social-icons">
+                                    <a href="#" class="icon-circle"><i class="icon-google"></i><span class="main-social-text">Google +</span></a>
+                                </li>
+                                <li class="main-social-icons">
+                                    <a href="#" class="icon-circle"><i class="icon-rss"></i><span class="main-social-text">Rss Feeds</span></a>
+                                </li>
+                                <li class="main-social-icons ">
+                                    <a href="#" class="icon-circle"><i class="icon-pinterest"></i><span class="main-social-text">Pinterest</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 no-padd">
+                        <div class="main-social-block">
+                            <div class="facebook-theme-block theme-content">
+                                <div class="main-social-header">
+                                    <i class="icon social-block-logo icon-facebook"></i>
+                                </div>
+
+                                <span class="social-counter">156K</span>
+                                <a href="#" class="social-follow">
+                                    <span class="follow-text">Follow</span>
+                                    <i class="icon icon-follow"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="main-social-block">
+                            <div class="twitter-theme-block theme-content">
+                                <div class="main-social-header">
+                                    <i class="icon social-block-logo icon-twitter"></i>
+                                </div>
+                                <div class="social-footer">
+                                    <span class="social-counter">89K</span>
+                                    <a href="#" class="social-follow">
+                                        <span class="follow-text">Following</span>
+                                        <i class="icon icon-follow-user"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col-8 no-padd">
+                        <div class="social-sing-in">
+                            <h3>Sign In</h3>
+                            <p class="paragraph">Just select your favorite social network to get started</p>
+
+                            <div class="sign-sicial">
+                                <a href="#" class="icon-circle">
+                                    <i class="counter-icon icon-facebook dark-blue-bg"></i>
+                                </a>
+                                <a href="#" class="icon-circle">
+                                    <i class="counter-icon icon-twitter lite-blue-bg"></i>
+                                </a>
+                                <a href="#" class="icon-circle">
+                                    <i class="counter-icon icon-google lite-red-bg"></i>
+                                </a>
+                                <a href="#" class="icon-circle">
+                                    <i class="counter-icon icon-linkedIn blue-bg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="col-8 no-padd">
+                        <div class="social-sing-in">
+                            <h3>Join the Newsletter</h3>
+                            <p class="paragraph">Sign up fpr our personalized newsletter</p>
+
+
+                            <form id="joinNewsletter" class="signForm">
+                                <input type="email" name="email" required class="" placeholder="Enter email address" /> <button class="btn btn-red">Sign Up</button>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide js-bg-img">
+            <img src="./img/img1.jpg" alt="">
+            <section class="slider-text--hold col-6">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're<br> sure many of our readers unwrapped some new consoles.<br> Despite its long life on the market...</p>
+                <a href="#" class="view">View More</a>
+            </section>
+        </div>
+        <div class="swiper-slide js-bg-img">
+            <img src="./img/img4.jpg" alt="">
+            <section class="slider-text--hold col-6">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're<br> sure many of our readers unwrapped some new consoles.<br> Despite its long life on the market...</p>
+                <a href="#" class="view">View More</a>
+            </section>
+        </div>
+        <div class="swiper-slide js-bg-img">
+            <img src="./img/img3.jpg" alt="">
+            <section class="slider-text--hold col-6">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're<br> sure many of our readers unwrapped some new consoles.<br> Despite its long life on the market...</p>
+                <a href="#" class="view">View More</a>
+            </section>
+        </div>
+        <div class="swiper-slide js-bg-img">
+            <img src="./img/img2.jpg" alt="">
+            <section class="slider-text--hold col-6">
+                <h1>Featured Story</h1>
+                <p>Now that the holiday gift-giving time is over, we're<br> sure many of our readers unwrapped some new consoles.<br> Despite its long life on the market...</p>
+                <a href="#" class="view">View More</a>
+            </section>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev">
+        <i class="icon-arrow-left"></i>
+    </div>
+    <div class="swiper-button-next">
+        <i class="icon-arrow-right"></i>
+    </div>
+
+</div>
+<footer>
+
+</footer>
+
+<div id="askModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Ask a Question</h3>
+            <span class="modal-close"></span>
+        </div>
+        <div class="modal-body">
+
+            <div class="modal-ask-form">
+                <form class="cmxform" id="commentForm" method="get" action="#">
+                    <fieldset>
+                        <input id="cname" name="name" minlength="4" type="text" required placeholder="Your name">
+
+
+                        <input id="cemail" type="email" name="email" required placeholder="Your email">
+                        <textarea minlength="8" id="ccomment" name="comment" required placeholder="Your question..."></textarea>
+
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
+
+</div>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
